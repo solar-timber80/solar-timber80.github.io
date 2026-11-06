@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nba直播视频观看免费高清-NBA直播免费高清观看_在线直播视频无插件观看</title>
+<meta name="description" content="nba直播视频观看免费高清首页，汇集NBA常规赛、季后赛与热门对决的免费高清直播视频入口，说明观看方式、画质选择与常见问题，帮助你快速找到可看的比赛直播。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121722'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23ff7a1a' stroke-width='3'/%3E%3Cpath d='M15 32h34M32 15v34M20 20c8 7 8 17 0 24M44 20c-8 7-8 17 0 24' fill='none' stroke='%23ff7a1a' stroke-width='2.4'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0d1119;
+    --bg-2:#131a26;
+    --panel:#17202e;
+    --line:#26313f;
+    --txt:#e8edf5;
+    --muted:#9aa8bb;
+    --accent:#ff7a1a;
+    --accent-2:#ffb15c;
+    --radius:14px;
+    --maxw:1160px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(900px 420px at 85% -10%, rgba(255,122,26,.16), transparent 65%),
+      radial-gradient(700px 380px at 0% 8%, rgba(64,120,220,.14), transparent 60%),
+      var(--bg);
+    color:var(--txt);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+  /* header */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(13,17,25,.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{display:flex;align-items:center;gap:18px;min-height:66px;flex-wrap:wrap;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px;letter-spacing:.3px;}
+  .logo .mark{
+    width:36px;height:36px;flex:none;border-radius:10px;
+    background:linear-gradient(145deg,#ff8a2b,#e4560a);
+    display:grid;place-items:center;
+    box-shadow:0 4px 14px rgba(255,122,26,.32);
+  }
+  .logo .mark svg{width:22px;height:22px;}
+  .logo span.txt{line-height:1.25;max-width:190px;}
+  nav.main{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;}
+  nav.main a{
+    font-size:14px;color:var(--muted);padding:7px 12px;border-radius:9px;
+    transition:color .18s, background .18s;
+  }
+  nav.main a:hover,nav.main a:focus-visible{color:var(--txt);background:#1d2735;outline:none;}
+  nav.main a.cta{color:#1a1006;background:linear-gradient(135deg,var(--accent-2),var(--accent));font-weight:700;}
+
+  /* hero */
+  .hero{padding:52px 0 40px;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;color:var(--accent-2);letter-spacing:1px;
+    border:1px solid rgba(255,122,26,.35);border-radius:999px;
+    padding:4px 12px;background:rgba(255,122,26,.08);
+  }
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255,122,26,.18);}
+  h1{
+    font-size:clamp(26px,4.2vw,42px);
+    line-height:1.28;margin:18px 0 16px;font-weight:800;letter-spacing:.5px;
+  }
+  h1 .hl{
+    background:linear-gradient(100deg,var(--accent-2),var(--accent));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .lead{color:#c2cddb;font-size:16px;margin:0 0 26px;max-width:56ch;}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 22px;border-radius:11px;font-weight:700;font-size:15px;
+    border:1px solid transparent;cursor:pointer;transition:transform .15s, box-shadow .2s, background .2s;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--accent-2),var(--accent));
+    color:#1a1006;box-shadow:0 8px 24px rgba(255,122,26,.28);
+  }
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(255,122,26,.4);}
+  .btn-ghost{border-color:#33404f;color:var(--txt);background:#18212e;}
+  .btn-ghost:hover{background:#202c3c;}
+  .btn[aria-disabled="true"]{opacity:.62;cursor:not-allowed;pointer-events:none;}
+  .hero-note{margin-top:16px;font-size:13px;color:var(--muted);}
+
+  .court-card{
+    background:linear-gradient(180deg,#18212e,#121a25);
+    border:1px solid var(--line);border-radius:20px;padding:18px;
+    box-shadow:0 24px 60px rgba(0,0,0,.45);
+  }
+  .court-card .cap{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);letter-spacing:.5px;margin-bottom:10px;}
+  .court-card .cap .live{color:#ff5b5b;font-weight:700;display:flex;align-items:center;gap:6px;}
+  .court-card .cap .live i{width:7px;height:7px;border-radius:50%;background:#ff5b5b;display:block;animation:pulse 1.6s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.25;}}
+
+  /* sections */
+  section{padding:38px 0;}
+  .sec-head{display:flex;align-items:flex-end;gap:14px;justify-content:space-between;flex-wrap:wrap;margin-bottom:22px;}
+  .sec-head h2{
+    font-size:clamp(19px,2.6vw,24px);margin:0;font-weight:800;letter-spacing:.4px;
+    padding-left:12px;border-left:4px solid var(--accent);line-height:1.3;
+  }
+  .sec-head p{margin:0;color:var(--muted);font-size:14px;max-width:52ch;}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 20px;transition:border-color .2s, transform .2s;
+  }
+  .card:hover{border-color:#3a4a5e;transform:translateY(-2px);}
+  .card .ico{
+    width:42px;height:42px;border-radius:11px;display:grid;place-items:center;margin-bottom:14px;
+    background:rgba(255,122,26,.12);border:1px solid rgba(255,122,26,.28);
+  }
+  .card .ico svg{width:22px;height:22px;}
+  .card h3{font-size:16px;margin:0 0 8px;font-weight:700;}
+  .card p{margin:0;font-size:14px;color:#b6c2d1;}
+
+  /* schedule table */
+  .schedule{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  }
+  .schedule .row-head{
+    display:grid;grid-template-columns:1.1fr 1.4fr .8fr .9fr;
+    gap:10px;padding:12px 20px;font-size:12.5px;letter-spacing:.6px;color:var(--muted);
+    background:#141d29;border-bottom:1px solid var(--line);text-transform:uppercase;
+  }
+  .schedule .row{
+    display:grid;grid-template-columns:1.1fr 1.4fr .8fr .9fr;
+    gap:10px;padding:15px 20px;font-size:14px;align-items:center;border-bottom:1px solid #1f2a38;
+  }
+  .schedule .row:last-child{border-bottom:none;}
+  .schedule .row:hover{background:#1a2432;}
+  .schedule .match{font-weight:700;}
+  .schedule .time{color:#c9d4e2;}
+  .tag{
+    display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;
+    border:1px solid #34445a;color:#a9b9cc;
+  }
+  .tag.hot{border-color:rgba(255,122,26,.5);color:var(--accent-2);background:rgba(255,122,26,.1);}
+
+  /* feature split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start;}
+  .prose h3{font-size:16px;margin:0 0 10px;font-weight:700;color:var(--accent-2);}
+  .prose p{margin:0 0 14px;color:#bcc8d7;font-size:15px;}
+  .prose ul{margin:0 0 14px;padding-left:20px;color:#bcc8d7;font-size:15px;}
+  .prose li{margin-bottom:7px;}
+
+  .steps{list-style:none;margin:0;padding:0;counter-reset:step;}
+  .steps li{
+    position:relative;padding:0 0 20px 52px;counter-increment:step;
+    border-left:2px dashed #2b3848;margin-left:16px;
+  }
+  .steps li:last-child{border-left-color:transparent;padding-bottom:0;}
+  .steps li::before{
+    content:counter(step,decimal-leading-zero);
+    position:absolute;left:-16px;top:-2px;
+    width:32px;height:32px;border-radius:50%;
+    background:#1c2634;border:1px solid #34445a;color:var(--accent-2);
+    display:grid;place-items:center;font-size:13px;font-weight:700;
+  }
+  .steps strong{display:block;font-size:15px;margin-bottom:4px;}
+  .steps span{font-size:14px;color:var(--muted);}
+
+  /* faq */
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  details{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:16px 18px;
+  }
+  details[open]{border-color:#3a4a5e;}
+  summary{
+    cursor:pointer;font-weight:700;font-size:15px;list-style:none;
+    display:flex;justify-content:space-between;gap:12px;align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";color:var(--accent);font-size:20px;line-height:1;font-weight:400;}
+  details[open] summary::after{content:"–";}
+  details p{margin:12px 0 0;font-size:14px;color:#b6c2d1;}
+
+  /* footer */
+  footer.site{
+    margin-top:40px;border-top:1px solid var(--line);background:#0a0e15;
+    padding:34px 0 26px;font-size:13.5px;color:var(--muted);
+  }
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px;margin-bottom:24px;}
+  .foot-grid h4{font-size:13px;color:#d7e0eb;margin:0 0 12px;letter-spacing:.6px;font-weight:700;}
+  .foot-grid ul{list-style:none;margin:0;padding:0;}
+  .foot-grid li{margin-bottom:8px;}
+  .foot-grid a:hover{color:var(--accent-2);}
+  .foot-bottom{border-top:1px solid #1a232f;padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;}
+
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:26px;}
+    .cards{grid-template-columns:1fr 1fr;}
+    .split{grid-template-columns:1fr;}
+    .faq{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    .nav-row{min-height:auto;padding:10px 0;}
+    nav.main{width:100%;margin-left:0;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;}
+    nav.main a{white-space:nowrap;}
+    .hero{padding:34px 0 26px;}
+    .cards{grid-template-columns:1fr;}
+    .schedule .row-head{display:none;}
+    .schedule .row{grid-template-columns:1fr;gap:4px;padding:14px 16px;}
+    .schedule .row .match{order:1;}
+    .schedule .row .league{order:2;}
+    .schedule .row .time{order:3;}
+    .schedule .row .status{order:4;}
+    .foot-grid{grid-template-columns:1fr;}
+    section{padding:28px 0;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="logo" href="#top" aria-label="nba直播视频观看免费高清 首页">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="17" stroke="#1a1006" stroke-width="3.4"/>
+          <path d="M15 32h34M32 15v34M20 20c8 7 8 17 0 24M44 20c-8 7-8 17 0 24" stroke="#1a1006" stroke-width="2.6"/>
+        </svg>
+      </span>
+      <span class="txt">nba直播视频观看免费高清</span>
+    </a>
+    <nav class="main" aria-label="主导航">
+      <a href="#schedule">今日赛程</a>
+      <a href="#watch">观看方式</a>
+      <a href="#quality">画质说明</a>
+      <a href="#faq">常见问题</a>
+      <a class="cta" href="#watch">进入直播</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><i class="dot" aria-hidden="true"></i>NBA 直播 · 高清视频入口</span>
+        <h1 id="hero-title">nba直播视频观看免费高清</h1>
+        <p class="lead">想找 <strong>nba直播视频观看免费高清</strong> 的入口，这里把常规赛、季后赛和热门焦点战的直播视频线索集中在一页。选好比赛，确认画质与线路，就能进入播放页面观看，无需额外安装播放器插件。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#schedule">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            查看今日直播
+          </a>
+          <a class="btn btn-ghost" href="#quality">画质与线路说明</a>
+        </div>
+        <p class="hero-note">页面内容为直播视频入口与观看说明，具体开播时间以实际比赛安排为准。</p>
+      </div>
+
+      <div class="court-card" aria-hidden="true">
+        <div class="cap">
+          <span>LIVE COURT</span>
+          <span class="live"><i></i>正在直播</span>
+        </div>
+        <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="篮球场示意插画">
+          <defs>
+            <linearGradient id="courtG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1e2a3a"/>
+              <stop offset="1" stop-color="#131b26"/>
+            </linearGradient>
+            <linearGradient id="ballG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffb15c"/>
+              <stop offset="1" stop-color="#e4560a"/>
+            </linearGradient>
+          </defs>
+          <rect x="10" y="10" width="380" height="220" rx="12" fill="url(#courtG)" stroke="#2c3a4c"/>
+          <rect x="26" y="26" width="348" height="188" rx="6" fill="none" stroke="#33455c" stroke-width="1.6"/>
+          <line x1="200" y1="26" x2="200" y2="214" stroke="#33455c" stroke-width="1.6"/>
+          <circle cx="200" cy="120" r="34" fill="none" stroke="#33455c" stroke-width="1.6"/>
+          <path d="M26 70h58v100H26" fill="none" stroke="#33455c" stroke-width="1.6"/>
+          <path d="M374 70h-58v100h58" fill="none" stroke="#33455c" stroke-width="1.6"/>
+          <circle cx="84" cy="120" r="26" fill="none" stroke="#33455c" stroke-width="1.6"/>
+          <circle cx="316" cy="120" r="26" fill="none" stroke="#33455c" stroke-width="1.6"/>
+          <g transform="translate(200 120)">
+            <circle r="30" fill="url(#ballG)" opacity=".95"/>
+            <path d="M-30 0h60M0 -30v60M-21 -21c12 12 12 30 0 42M21 -21c-12 12-12 30 0 42" fill="none" stroke="#1a1006" stroke-width="2.2" opacity=".75"/>
+          </g>
+          <circle cx="84" cy="120" r="5" fill="#ff7a1a"/>
+          <circle cx="316" cy="120" r="5" fill="#ff7a1a"/>
+        </svg>
+        <div style="display:flex;justify-content:space-between;font-size:12.5px;color:#9aa8bb;margin-top:12px;">
+          <span>高清画质</span><span>多线路切换</span><span>无插件播放</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观看价值 -->
+  <section id="watch" aria-labelledby="watch-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="watch-title">为什么在这里看 NBA 直播</h2>
+        <p>围绕 nba直播视频观看免费高清 的核心需求，页面把入口、画质与观看条件说清楚，减少反复试错。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffb15c" stroke-width="2" stroke-linecap="round"><rect x="2.5" y="4.5" width="19" height="13" rx="2.5"/><path d="M8 21h8M12 17.5V21"/></svg>
+          </span>
+          <h3>比赛入口集中</h3>
+          <p>按日期和场次排列直播视频，常规赛、季后赛与焦点对决都能在同一页找到对应入口，不必在多个页面之间来回跳转。</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffb15c" stroke-width="2" stroke-linecap="round"><path d="M3 16V8M8 19V5M13 15V9M18 20V4M22 12h-2"/></svg>
+          </span>
+          <h3>高清画质可选</h3>
+          <p>播放页提供清晰度切换，网络条件好时可选高清档位，移动数据环境下可下调画质，兼顾流畅与流量消耗。</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffb15c" stroke-width="2" stroke-linecap="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/><circle cx="12" cy="12" r="3.2"/></svg>
+          </span>
+          <h3>多线路备选</h3>
+          <p>单条线路拥堵时，可切换到其他视频源继续观看。切换不改变比赛内容，只是更换播放通道，适合高峰时段使用。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 今日赛程 -->
+  <section id="schedule" aria-labelledby="schedule-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="schedule-title">近期直播场次一览</h2>
+        <p>下表为示例排期结构，实际对阵与开赛时间请以当天比赛安排为准。</p>
+      </div>
+      <div class="schedule" role="table" aria-label="NBA 直播场次示例">
+        <div class="row-head" role="row">
+          <span role="columnheader">对阵</span>
+          <span role="columnheader">赛事阶段</span>
+          <span role="columnheader">开赛时间</span>
+          <span role="columnheader">直播状态</span>
+        </div>
+        <div class="row" role="row">
+          <span class="match" role="cell">东部强队 vs 西部强队</span>
+          <span class="league" role="cell">常规赛</span>
+          <span class="time" role="cell">上午 09:00</span>
+          <span class="status" role="cell"><span class="tag hot">焦点战</span></span>
+        </div>
+        <div class="row" role="row">
+          <span class="match" role="cell">主场球队 vs 客场球队</span>
+          <span class="league" role="cell">常规赛</span>
+          <span class="time" role="cell">上午 10:30</span>
+          <span class="status" role="cell"><span class="tag">待开播</span></span>
+        </div>
+        <div class="row" role="row">
+          <span class="match" role="cell">季后赛席位争夺战</span>
+          <span class="league" role="cell">季后赛</span>
+          <span class="time" role="cell">上午 08:00</span>
+          <span class="status" role="cell"><span class="tag hot">推荐观看</span></span>
+        </div>
+        <div class="row" role="row">
+          <span class="match" role="cell">背靠背第二场</span>
+          <span class="league" role="cell">常规赛</span>
+          <span class="time" role="cell">上午 11:00</span>
+          <span class="status" role="cell"><span class="tag">待开播</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观看方式 + 画质 -->
+  <section id="quality" aria-labelledby="quality-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="quality-title">观看流程与画质选择</h2>
+        <p>nba直播视频观看免费高清 的体验，很大程度取决于线路选择与本地网络状态。</p>
+      </div>
+      <div class="split">
+        <div class="prose">
+          <h3>四步进入直播视频</h3>
+          <ol class="steps">
+            <li><strong>确认场次</strong><span>在上方场次表中找到想看的比赛，记下开赛时间与赛事阶段。</span></li>
+            <li><strong>进入播放页</strong><span>点击对应场次的直播入口，页面会加载视频播放窗口。</span></li>
+            <li><strong>选择清晰度</strong><span>默认自动匹配网络状况，也可手动切换到高清档位。</span></li>
+            <li><strong>必要时换线路</strong><span>出现卡顿或缓冲时，切换到备用视频源继续观看。</span></li>
+          </ol>
+        </div>
+        <div class="prose">
+          <h3>画质与网络建议</h3>
+          <p>高清视频对带宽有一定要求。使用家庭宽带或稳定 Wi-Fi 时，通常可以稳定播放高清画面；在移动网络下，建议先观察缓冲情况再决定是否切换到高清档位。</p>
+          <ul>
+            <li>播放前关闭占用带宽的后台下载与自动更新。</li>
+            <li>手机端横屏观看可获得更完整的画面比例。</li>
+            <li>画面卡顿时优先降低清晰度，再考虑更换线路。</li>
+            <li>浏览器建议保持较新版本，以获得更好的解码支持。</li>
+          </ul>
+          <p>如果你更关注解说与数据，可以在观看 nba直播视频观看免费高清 的同时打开比分页面，对照实时技术统计理解比赛走势。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="faq-title">常见问题</h2>
+        <p>关于免费观看、画质与设备兼容的集中说明。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>观看 NBA 直播需要注册账号吗？</summary>
+          <p>本页提供的直播视频入口以直接观看为主，通常不需要额外注册。若某个视频源要求登录，可切换到其他线路尝试。</p>
+        </details>
+        <details>
+          <summary>为什么有时画面不够清晰？</summary>
+          <p>清晰度受视频源档位与本地网络共同影响。可先在播放器中手动选择高清档位，若仍缓冲明显，说明当前网络带宽不足，此时降低一档反而更流畅。</p>
+        </details>
+        <details>
+          <summary>手机上能看 nba直播视频观看免费高清 吗？</summary>
+          <p>可以。页面已适配手机屏幕，播放窗口支持横屏。建议在 Wi-Fi 环境下观看高清画面，避免移动流量消耗过快。</p>
+        </details>
+        <details>
+          <summary>比赛结束后还能回看吗？</summary>
+          <p>直播结束后是否保留回放取决于视频源本身。部分场次会提供集锦或回放片段，可在播放页内查看是否有对应入口。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 收束 -->
+  <section aria-labelledby="end-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="end-title">开赛前做好准备</h2>
+        <p>把入口、线路与画质提前确认好，比赛开始时就少一层等待。</p>
+      </div>
+      <div class="prose" style="max-width:74ch;">
+        <p>一场 NBA 比赛的节奏很快，开局阶段的攻防往往决定整场基调。建议在开赛前几分钟进入直播页面，确认视频可以正常加载，并提前选定清晰度档位。若你关注的是焦点对决，可以准备一条备用线路，避免高峰时段集中涌入造成缓冲。</p>
+        <p>本页围绕 nba直播视频观看免费高清 整理入口与说明，涵盖场次查看、观看流程、画质建议与常见问题。无论是常规赛的日常追踪，还是季后赛的关键场次，都可以从场次表出发，找到对应的直播视频入口，按自己的网络条件选择合适画质观看。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>nba直播视频观看免费高清</h4>
+        <p style="margin:0 0 10px;color:#9aa8bb;">集中呈现 NBA 比赛直播视频入口、观看流程与画质说明，帮助球迷快速找到可观看的高清直播。</p>
+        <p style="margin:0;color:#7d8b9e;font-size:12.5px;">页面内容为入口与说明，比赛安排以实际赛程为准。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#schedule">近期直播场次</a></li>
+          <li><a href="#watch">观看价值</a></li>
+          <li><a href="#quality">观看流程与画质</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>常用入口</h4>
+        <ul>
+          <li><a href="#schedule">今日直播</a></li>
+          <li><a href="#quality">线路切换说明</a></li>
+          <li><a href="#top">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>nba直播视频观看免费高清 · 直播视频入口与观看说明</span>
+      <span>内容仅供球迷了解比赛直播信息</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
