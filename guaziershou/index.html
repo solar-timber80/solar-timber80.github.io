@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>瓜子二手车官网-二手车直卖网购车_瓜子二手车平台车源与检测</title>
+<meta name="description" content="瓜子二手车官网首页，围绕二手车直卖网购车需求，介绍平台车源浏览、车辆检测报告、价格构成与购车流程等核心信息，帮助用户了解瓜子二手车官网的主要服务入口。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f7a4d'/%3E%3Cpath d='M14 38h36l-4-12a6 6 0 0 0-5.6-4H23.6A6 6 0 0 0 18 26l-4 12z' fill='%23fff'/%3E%3Ccircle cx='22' cy='44' r='4.5' fill='%23f5c542'/%3E%3Ccircle cx='42' cy='44' r='4.5' fill='%23f5c542'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --green:#1f7a4d;
+    --green-deep:#155c39;
+    --green-soft:#e8f3ed;
+    --ink:#17211c;
+    --ink-2:#44514a;
+    --line:#dde6e0;
+    --bg:#f6f8f6;
+    --gold:#f0b429;
+    --radius:14px;
+    --maxw:1140px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:inherit;text-decoration:none;}
+  img,svg{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+  h1,h2,h3{line-height:1.35;margin:0;}
+
+  /* header */
+  header.site{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:50;
+  }
+  .nav{
+    display:flex;align-items:center;gap:26px;
+    min-height:68px;flex-wrap:wrap;
+  }
+  .logo{
+    display:flex;align-items:center;gap:10px;
+    font-weight:800;font-size:18px;letter-spacing:.2px;
+    color:var(--green-deep);
+  }
+  .logo .mark{
+    width:38px;height:38px;border-radius:10px;
+    background:var(--green);display:grid;place-items:center;flex:0 0 auto;
+  }
+  .nav ul{
+    display:flex;gap:22px;list-style:none;margin:0;padding:0;
+    margin-left:auto;flex-wrap:wrap;font-size:15px;color:var(--ink-2);
+  }
+  .nav ul a{padding:6px 2px;border-bottom:2px solid transparent;}
+  .nav ul a:hover,.nav ul a:focus-visible{color:var(--green-deep);border-color:var(--green);}
+  .nav .cta{
+    background:var(--green);color:#fff;border-radius:999px;
+    padding:9px 20px;font-size:15px;font-weight:600;
+  }
+  .nav .cta:hover{background:var(--green-deep);}
+
+  /* hero */
+  .hero{
+    background:linear-gradient(160deg,#eaf4ee 0%,#f7faf8 60%,#f6f8f6 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:44px;
+    align-items:center;padding:56px 0 60px;
+  }
+  .eyebrow{
+    display:inline-block;font-size:13px;font-weight:700;letter-spacing:1px;
+    color:var(--green-deep);background:#fff;border:1px solid #cfe3d8;
+    border-radius:999px;padding:4px 14px;margin-bottom:18px;
+  }
+  h1{font-size:40px;font-weight:800;color:var(--green-deep);letter-spacing:.5px;}
+  .hero p.lead{
+    margin:18px 0 0;font-size:16.5px;color:var(--ink-2);max-width:34em;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    border-radius:999px;padding:12px 26px;font-weight:600;font-size:15.5px;
+    border:1px solid transparent;
+  }
+  .btn-primary{background:var(--green);color:#fff;}
+  .btn-primary:hover{background:var(--green-deep);}
+  .btn-ghost{background:#fff;color:var(--green-deep);border-color:#c6dccf;}
+  .btn-ghost:hover{border-color:var(--green);}
+  .hero-stats{
+    display:flex;gap:30px;margin-top:34px;flex-wrap:wrap;
+    border-top:1px dashed #cbdfd3;padding-top:20px;
+  }
+  .hero-stats div strong{display:block;font-size:20px;color:var(--green-deep);}
+  .hero-stats div span{font-size:13px;color:var(--ink-2);}
+  .hero-visual{
+    background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:22px;box-shadow:0 18px 40px -28px rgba(21,92,57,.45);
+  }
+  .hero-visual .cap{
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:13px;color:var(--ink-2);margin-bottom:10px;
+  }
+  .hero-visual .cap b{color:var(--green-deep);font-size:14px;}
+
+  /* sections */
+  section{padding:56px 0;}
+  .sec-head{max-width:46em;margin-bottom:30px;}
+  .sec-head h2{font-size:26px;font-weight:800;color:var(--green-deep);}
+  .sec-head p{margin:10px 0 0;color:var(--ink-2);font-size:15.5px;}
+  .kicker{
+    font-size:12.5px;font-weight:700;letter-spacing:2px;
+    color:#7c9a89;text-transform:uppercase;margin-bottom:8px;display:block;
+  }
+
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 24px;
+  }
+  .card .ico{
+    width:44px;height:44px;border-radius:12px;background:var(--green-soft);
+    display:grid;place-items:center;margin-bottom:16px;
+  }
+  .card h3{font-size:17.5px;color:var(--ink);margin-bottom:8px;}
+  .card p{margin:0;font-size:14.8px;color:var(--ink-2);}
+
+  /* process */
+  .process{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;}
+  .step{padding:0 20px;border-left:1px solid var(--line);}
+  .step:first-child{border-left:0;padding-left:0;}
+  .step .num{
+    font-size:13px;font-weight:800;color:#fff;background:var(--green);
+    width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+    margin-bottom:14px;
+  }
+  .step h3{font-size:16.5px;margin-bottom:8px;}
+  .step p{margin:0;font-size:14.5px;color:var(--ink-2);}
+
+  /* list / faq */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+  .checklist{list-style:none;margin:0;padding:0;}
+  .checklist li{
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:16px 18px;margin-bottom:12px;font-size:15px;color:var(--ink-2);
+    display:flex;gap:12px;
+  }
+  .checklist li b{color:var(--ink);display:block;font-size:15.5px;margin-bottom:2px;}
+  .dot{
+    flex:0 0 auto;width:22px;height:22px;border-radius:50%;
+    background:var(--green-soft);color:var(--green-deep);
+    display:grid;place-items:center;font-size:12px;font-weight:800;margin-top:2px;
+  }
+  details{
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:16px 18px;margin-bottom:12px;
+  }
+  details summary{
+    cursor:pointer;font-weight:700;font-size:15.5px;color:var(--ink);
+    list-style:none;display:flex;justify-content:space-between;gap:12px;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::after{content:"+";color:var(--green);font-weight:800;}
+  details[open] summary::after{content:"–";}
+  details p{margin:10px 0 0;font-size:14.8px;color:var(--ink-2);}
+
+  /* cta band */
+  .band{
+    background:var(--green-deep);color:#eaf4ee;border-radius:20px;
+    padding:40px 38px;display:flex;gap:30px;align-items:center;
+    justify-content:space-between;flex-wrap:wrap;
+  }
+  .band h2{font-size:24px;color:#fff;margin-bottom:8px;}
+  .band p{margin:0;font-size:15px;max-width:40em;color:#cfe3d8;}
+  .band .btn-primary{background:#fff;color:var(--green-deep);white-space:nowrap;}
+  .band .btn-primary:hover{background:#e8f3ed;}
+
+  /* footer */
+  footer.site{
+    background:#fff;border-top:1px solid var(--line);
+    padding:40px 0 34px;margin-top:20px;
+  }
+  .foot-top{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;
+    padding-bottom:26px;border-bottom:1px solid var(--line);
+  }
+  .foot-top h4{font-size:14.5px;margin:0 0 12px;color:var(--ink);}
+  .foot-top ul{list-style:none;margin:0;padding:0;font-size:14px;color:var(--ink-2);}
+  .foot-top li{margin-bottom:8px;}
+  .foot-top a:hover{color:var(--green-deep);}
+  .foot-brand p{font-size:14px;color:var(--ink-2);margin:12px 0 0;max-width:26em;}
+  .foot-bottom{
+    padding-top:20px;font-size:13px;color:#7a8a80;
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  }
+
+  @media (max-width:920px){
+    .hero-inner{grid-template-columns:1fr;gap:32px;padding:40px 0 46px;}
+    h1{font-size:30px;}
+    .grid-3{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr 1fr;gap:26px;}
+    .step{border-left:0;padding:0;}
+    .two-col{grid-template-columns:1fr;gap:26px;}
+    .foot-top{grid-template-columns:1fr;}
+  }
+  @media (max-width:640px){
+    body{font-size:15.5px;}
+    .nav{gap:14px;padding:10px 0;}
+    .nav ul{margin-left:0;order:3;width:100%;gap:16px;font-size:14px;}
+    .nav .cta{margin-left:auto;}
+    h1{font-size:26px;}
+    .hero-stats{gap:20px;}
+    .steps{grid-template-columns:1fr;}
+    .band{padding:28px 22px;}
+    section{padding:40px 0;}
+    .sec-head h2{font-size:22px;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="瓜子二手车官网首页">
+      <span class="mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <path d="M12 38h40l-4.5-13.5A6 6 0 0 0 41.8 20H22.2a6 6 0 0 0-5.7 4.5L12 38z" fill="#fff"/>
+          <circle cx="21" cy="44" r="5" fill="#f0b429"/>
+          <circle cx="43" cy="44" r="5" fill="#f0b429"/>
+        </svg>
+      </span>
+      瓜子二手车官网
+    </a>
+    <ul>
+      <li><a href="#source">车源浏览</a></li>
+      <li><a href="#inspect">检测与车况</a></li>
+      <li><a href="#flow">购车流程</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+    <a class="cta" href="#source">开始找车</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">二手车直卖 · 平台购车</span>
+        <h1>瓜子二手车官网</h1>
+        <p class="lead">想买一台车况清楚、价格透明的二手车，可以从这里开始。瓜子二手车官网把车源浏览、车辆检测信息与购车流程放在同一处，方便你先看清再决定。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#source">浏览在售车源</a>
+          <a class="btn btn-ghost" href="#inspect">了解检测报告</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>直卖模式</strong><span>个人车源为主</span></div>
+          <div><strong>259项</strong><span>常规检测项目</span></div>
+          <div><strong>7天</strong><span>可退保障期</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="cap"><b>车源速览</b><span>示例展示</span></div>
+        <svg viewBox="0 0 420 210" role="img" aria-label="二手车车源卡片示意图">
+          <rect x="0" y="0" width="420" height="210" rx="14" fill="#eef5f0"/>
+          <rect x="20" y="20" width="380" height="96" rx="10" fill="#ffffff"/>
+          <path d="M60 92h300l-16-38a14 14 0 0 0-13-9H89a14 14 0 0 0-13 9L60 92z" fill="#1f7a4d" opacity="0.9"/>
+          <circle cx="112" cy="96" r="13" fill="#17211c"/>
+          <circle cx="308" cy="96" r="13" fill="#17211c"/>
+          <circle cx="112" cy="96" r="5" fill="#f0b429"/>
+          <circle cx="308" cy="96" r="5" fill="#f0b429"/>
+          <rect x="20" y="130" width="180" height="12" rx="6" fill="#c6dccf"/>
+          <rect x="20" y="152" width="120" height="10" rx="5" fill="#dde6e0"/>
+          <rect x="290" y="130" width="110" height="34" rx="10" fill="#1f7a4d"/>
+          <rect x="310" y="143" width="70" height="8" rx="4" fill="#ffffff"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOURCE -->
+  <section id="source">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Browse</span>
+        <h2>在瓜子二手车官网，先按需求缩小范围</h2>
+        <p>车源页按品牌、价格区间、车龄和所在城市组织，你可以先确定预算与用途，再逐条查看车辆信息与检测结果。以下三类需求，是多数人在瓜子二手车官网最先处理的问题。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f7a4d" stroke-width="2" stroke-linecap="round"><path d="M3 13h18M6 13l2-6h8l2 6"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/></svg>
+          </div>
+          <h3>预算先定，车型后选</h3>
+          <p>把价格区间作为第一筛选条件，再对比同价位车型的车龄与里程。瓜子二手车官网的车源列表会展示指导价与在售价，方便你判断是否值得进一步联系看车。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f7a4d" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>先看检测，再约看车</h3>
+          <p>每台在售车辆配有检测信息，涵盖外观、内饰、发动机舱与底盘等项目。建议把检测报告中标注的瑕疵项与自己的接受范围对照，再决定是否预约线下看车。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f7a4d" stroke-width="2" stroke-linecap="round"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 12h8M8 16h5"/></svg>
+          </div>
+          <h3>价格构成说得清楚</h3>
+          <p>在瓜子二手车官网看车时，留意页面标注的车价、服务费与过户相关费用。把总支出而非单车价作为比较口径，能让不同车源之间的对比更接近实际。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSPECT -->
+  <section id="inspect" style="padding-top:0;">
+    <div class="wrap two-col">
+      <div>
+        <span class="kicker">Condition</span>
+        <h2 style="font-size:26px;color:var(--green-deep);">看车况时，重点核对这几项</h2>
+        <p style="color:var(--ink-2);margin-top:10px;">检测报告是判断车辆状态的主要依据。阅读时不必逐条看完，抓住与使用成本和安全性相关的部分即可。瓜子二手车官网的检测信息按部位分类展示，便于对照。</p>
+        <ul class="checklist">
+          <li><span class="dot">1</span><span><b>骨架与结构件</b>确认是否有事故修复记录，结构件状态直接影响后续使用与转让。</span></li>
+          <li><span class="dot">2</span><span><b>发动机与变速箱</b>关注渗油、异响等描述，必要时在试驾中重点感受。</span></li>
+          <li><span class="dot">3</span><span><b>外观与内饰瑕疵</b>划痕、凹陷属于常见项，据实记录即可，不必过度放大。</span></li>
+          <li><span class="dot">4</span><span><b>里程与保养记录</b>里程与车龄是否匹配，是判断车况的重要参考。</span></li>
+        </ul>
+      </div>
+      <div>
+        <span class="kicker">Faq</span>
+        <h2 style="font-size:26px;color:var(--green-deep);" id="faq">常见问题</h2>
+        <p style="color:var(--ink-2);margin-top:10px;">以下几个问题在浏览车源时出现频率较高，答案以平台公开的服务说明为准。</p>
+        <div style="margin-top:18px;">
+          <details open>
+            <summary>瓜子二手车官网的车源都是个人车吗？</summary>
+            <p>平台以个人车源直卖为主，同时也存在部分其他来源车辆。具体每台车的来源会在车源详情中标注，购车前可据此判断。</p>
+          </details>
+          <details>
+            <summary>检测报告能代替线下看车吗？</summary>
+            <p>不能完全代替。检测报告提供车辆状态的结构化记录，但试驾感受、内饰气味与空间体验仍需本人到场确认。</p>
+          </details>
+          <details>
+            <summary>购车后有哪些保障？</summary>
+            <p>平台提供一定期限的退车保障与延保服务选项，具体期限、适用条件与费用以订单页面展示的条款为准。</p>
+          </details>
+          <details>
+            <summary>可以异地购车吗？</summary>
+            <p>部分车源支持跨城市交付，是否可异地购买、运输费用与过户安排需在下单前与服务人员确认。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section id="flow" class="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Process</span>
+        <h2>从选车到过户，四步走完</h2>
+        <p>瓜子二手车官网的购车路径相对固定，提前了解每一步做什么，可以减少来回沟通的次数。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>筛选车源</h3>
+          <p>按预算、车型与城市锁定几台候选车，收藏后集中比较检测报告与价格。</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>预约看车</h3>
+          <p>在线预约线下看车时间，现场核对车辆信息，并完成试驾与细节确认。</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>下单付款</h3>
+          <p>确认车况与费用明细后下单，支付方式与合同条款在页面中逐项列明。</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>交付过户</h3>
+          <p>按约定完成车辆交付与过户手续，保留相关凭证以备后续查询。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <section>
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>把预算和用车场景说清楚，选车会快很多</h2>
+          <p>登录瓜子二手车官网后，可以先保存几组筛选条件，再逐台对比检测报告与总价。不清楚的地方，建议在下单前逐项问明。</p>
+        </div>
+        <a class="btn btn-primary" href="#source">进入车源列表</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="logo" href="#top" style="font-size:16px;">
+          <span class="mark" style="width:32px;height:32px;border-radius:9px;" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <path d="M12 38h40l-4.5-13.5A6 6 0 0 0 41.8 20H22.2a6 6 0 0 0-5.7 4.5L12 38z" fill="#fff"/>
+              <circle cx="21" cy="44" r="5" fill="#f0b429"/>
+              <circle cx="43" cy="44" r="5" fill="#f0b429"/>
+            </svg>
+          </span>
+          瓜子二手车官网
+        </a>
+        <p>瓜子二手车官网是二手车直卖网购车的入口之一，提供车源浏览、车辆检测信息查看与在线购车流程。本页内容为平台通用信息说明，具体服务以页面实际展示为准。</p>
+      </div>
+      <div>
+        <h4>购车服务</h4>
+        <ul>
+          <li><a href="#source">车源浏览</a></li>
+          <li><a href="#inspect">检测与车况</a></li>
+          <li><a href="#flow">购车流程</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于平台</h4>
+        <ul>
+          <li><a href="#top">返回首页</a></li>
+          <li><a href="#inspect">保障说明</a></li>
+          <li><a href="#flow">交付与过户</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 瓜子二手车官网 · 二手车直卖平台信息页</span>
+      <span>车源与检测数据以平台实时展示为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
